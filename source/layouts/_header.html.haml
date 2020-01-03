@@ -1,0 +1,37 @@
+.mobile-menu.d-lg-none
+	.navbar-nav.mx-auto
+		.nav-item
+			%a.nav-link{:href => "/"}
+				Home
+		.nav-item
+			%a.nav-link{:href => "#"}
+				Sign in
+		.nav-item
+			%a.nav-link{:href => "support.evercheckwallet.com"}
+				Help
+		.nav-item
+			%a.nav-link.btn.btn-primary{:href => "#"}
+				Get started
+
+#primary-nav.navbar-page-top
+	.container
+		.row.align-items-center
+			.col
+				%a{:href=>"/"}
+					%img{:src=>"../images/logo.svg"}
+			.col.d-sm-none.d-none.d-md-block
+				%ul.nav.justify-content-end.align-items-center
+					%li.nav-item
+						%a.nav-link{:href=>"#"}
+							Sign in
+					%li.nav-item
+						%a.nav-link{:href=>"support.evercheckwallet.com"}
+							Help
+					%li.nav-item.margin-left
+						%a.btn.btn-primary.btn-lg{:href=>"#"}
+							Get started
+.d-block.d-md-none
+	%button.tcon.tcon-menu--xcross.menu-button.toggle-menu-button{:type => "button"}
+		%span.tcon-menu__lines{"aria-hidden" => "true"}
+		%span.tcon-visuallyhidden
+			toggle menu
