@@ -1,37 +1,99 @@
-.mobile-menu.d-lg-none
-	.navbar-nav.mx-auto
-		.nav-item
-			%a.nav-link{:href => "/"}
-				Home
-		.nav-item
-			%a.nav-link{:href => "#"}
-				Sign in
-		.nav-item
-			%a.nav-link{:href => "support.evercheckwallet.com"}
-				Help
-		.nav-item
-			%a.nav-link.btn.btn-primary{:href => "#"}
-				Get started
 
-#primary-nav.navbar-page-top
+%nav.navbar.navbar-expand-lg.navbar-light#primary-nav
 	.container
-		.row.align-items-center
-			.col
-				%a{:href=>"/"}
-					%img{:src=>"../images/logo.svg"}
-			.col.d-sm-none.d-none.d-md-block
-				%ul.nav.justify-content-end.align-items-center
-					%li.nav-item
-						%a.nav-link{:href=>"#"}
-							Sign in
-					%li.nav-item
-						%a.nav-link{:href=>"support.evercheckwallet.com"}
-							Help
-					%li.nav-item.margin-left
-						%a.btn.btn-primary.btn-lg{:href=>"#"}
-							Get started
-.d-block.d-md-none
-	%button.tcon.tcon-menu--xcross.menu-button.toggle-menu-button{:type => "button"}
-		%span.tcon-menu__lines{"aria-hidden" => "true"}
-		%span.tcon-visuallyhidden
-			toggle menu
+		%a.navbar-brand.brand{:href => "#"} 
+			%img{:src=>"../images/logo.svg", :width=>"153px"}
+		%button.tcon.tcon-menu--xcross.menu-button.toggle-menu-button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+			%span.tcon-menu__lines{"aria-hidden" => "true"}
+			%span.tcon-visuallyhidden
+				toggle menu
+		#navbarSupportedContent.collapse.navbar-collapse
+			%ul.navbar-nav.mr-auto
+				%li.nav-item.dropdown
+					%a#navbarDropdown.nav-link.text-color{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+						Solutions
+						%i.material-icons.dropdown-caret
+							keyboard_arrow_down
+					.dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
+							.media
+								%img.margin-right{:src=>"../images/menu-icon-hr.svg"}
+								.media-body
+									%p.mt-0.bold-font.no-margin-bottom.blue-text-color
+										Human resources
+									%h4.no-margin-bottom.light-text-color
+										An automated approach to ongoing license management.
+						.dropdown-divider.no-margin
+						-3.times do
+							%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
+								.media
+									%img.margin-right{:src=>"../images/menu-icon-hr.svg"}
+									.media-body
+										%p.mt-0.bold-font.no-margin-bottom.blue-text-color
+											Human resources
+										%h4.no-margin-bottom.light-text-color
+											An automated approach to ongoing license management.
+				%li.nav-item.dropdown
+					%a#navbarDropdown.nav-link.text-color{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+						Use cases
+						%i.material-icons.dropdown-caret
+							keyboard_arrow_down
+					.dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
+							.media
+								%img.margin-right{:src=>"../images/menu-icon-hr.svg"}
+								.media-body
+									%p.mt-0.bold-font.no-margin-bottom.blue-text-color
+										Human resources
+									%h4.no-margin-bottom.light-text-color
+										An automated approach to ongoing license management.
+						
+				%li.nav-item
+					%a.nav-link.text-color{:href => "#"}
+						Resources
+				%li.nav-item
+					%a.nav-link.text-color{:href => "#"} 
+						Pricing
+			.action-buttons
+				%form.form-inline.my-2.my-lg-0
+					%button.btn.btn-primary.btn-sm.my-2.my-sm-0.half-margin-right{:type => "submit"} 
+						Request a demo
+					%button.btn.btn-secondary.btn-sm.my-2.my-sm-0{:type => "submit"} 
+						Sign in
+
+
+
+
+/ #primary-nav.navbar-page-top
+/ 	.container
+/ 		.row.align-items-center
+/ 			.col-9.col-lg-8
+/ 				.nav.align-items-center
+/ 					.nav-item.margin-right
+/ 						%a.brand{:href=>"/"}
+/ 							%img{:src=>"../images/logo.svg", :width=>"153px"}
+/ 					.nav-item
+/ 						%a.nav-link.text-color{:href=>"#"}
+/ 							Solutions
+/ 					.nav-item
+/ 						%a.nav-link.text-color{:href=>"#"}
+/ 							Use cases
+/ 					.nav-item
+/ 						%a.nav-link.text-color{:href=>"#"}
+/ 							Resources
+/ 					.nav-item
+/ 						%a.nav-link.text-color{:href=>"#"}
+/ 							Pricing
+/ 			.col-3.col-lg-4
+/ 				.nav.justify-content-end.align-items-center
+/ 					.nav-item.margin-right
+/ 						%a.btn.btn-primary.btn-sm{:href=>"#"}
+/ 							Request a demo
+/ 					.nav-item
+/ 						%a.btn.btn-secondary.btn-sm{:href=>"#"}
+/ 							Sign in
+/ 					.nav-item.d-block.d-lg-none
+/ 						%button.nav-link.tcon.tcon-menu--xcross.menu-button.toggle-menu-button{:type => "button"}
+/ 							%span.tcon-menu__lines{"aria-hidden" => "true"}
+/ 							%span.tcon-visuallyhidden
+/ 								toggle menu

@@ -13,9 +13,10 @@ a{
 
 .btn{
 	border-radius:$base-border-radius;
-	font-weight:600;
+	font-weight:700;
 	font-size:$base-font-size;
-	min-width:200px;
+	min-width:88px;
+	padding: 8px 16px;
 	
 	i{
 		font-size:$base-font-size;
@@ -24,11 +25,12 @@ a{
 		margin-right:10px;
 	}
 	&.btn-link{
-		font-size: 21px;
 		border:none;
 		border-bottom:1px solid $link-color;
 		padding-left:0;
 		padding-right:0;
+		border-radius:0px;
+		min-width: auto;
 		&:hover{
 			text-decoration: none;
 			color:shade($link-color,30%)!important;
@@ -51,8 +53,13 @@ a{
 		background:white;
 		border-color:$lightest-gray-color;
 		color:$text-color;
-		&:hover{
+		&:active{
 			border-color:shade($lightest-gray-color,90%);
+			background:$off-white-dark-color!important;
+			color:$text-color!important;
+		}
+		&:hover{
+			background:$off-white-dark-color;
 		}
 	}
 	&.btn-white{
@@ -155,6 +162,9 @@ a{
 	//sizes
 	&.btn-lg{
 		padding:.8rem 1rem;
+	}
+	&.btn-sm{
+		font-size: 14px;
 	}
 	&.btn-scroll{
 		color:rgba(255,255,255,.5);
