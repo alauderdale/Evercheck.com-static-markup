@@ -120,3 +120,12 @@ img{
 .overflow-visible{
   overflow:visible!important;
 }
+
+//dividers
+
+.divider{
+  height: 0;
+  margin: .5rem 0;
+  overflow: hidden;
+  border-top: 1px solid $border-color;
+}

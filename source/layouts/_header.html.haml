@@ -1,7 +1,7 @@
 
 %nav.navbar.navbar-expand-lg.navbar-light#primary-nav
 	.container
-		%a.navbar-brand.brand{:href => "#"} 
+		%a.navbar-brand.brand{:href => "/"} 
 			%img{:src=>"../images/logo.svg", :width=>"153px"}
 		%form.form-inline
 			.d-none.d-sm-block.d-lg-none
@@ -21,22 +21,37 @@
 					.dropdown-menu{"aria-labelledby" => "navbarDropdown"}
 						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
 							.media
+								%img.margin-right{:src=>"../images/menu-icon-overview.svg"}
+								.media-body
+									%p.mt-0.bold-font.no-margin-bottom.secondary-text-color
+										Platform overview
+									%h4.no-margin-bottom.extra-light-text-color
+										Integrated solutions for the modern healthcare workforce.
+						.dropdown-divider.no-margin
+						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
+							.media
 								%img.margin-right{:src=>"../images/menu-icon-hr.svg"}
 								.media-body
 									%p.mt-0.bold-font.no-margin-bottom.blue-text-color
 										Human resources
-									%h4.no-margin-bottom.light-text-color
-										An automated approach to ongoing license management.
-						.dropdown-divider.no-margin
-						-3.times do
-							%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
-								.media
-									%img.margin-right{:src=>"../images/menu-icon-hr.svg"}
-									.media-body
-										%p.mt-0.bold-font.no-margin-bottom.blue-text-color
-											Human resources
-										%h4.no-margin-bottom.light-text-color
-											An automated approach to ongoing license management.
+									%h4.no-margin-bottom.extra-light-text-color
+										A higher standard for primary source verification.
+						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
+							.media
+								%img.margin-right{:src=>"../images/menu-icon-education.svg"}
+								.media-body
+									%p.mt-0.bold-font.no-margin-bottom.yellow-text-color
+										Education
+									%h4.no-margin-bottom.extra-light-text-color
+										Track, manage, and create continuing education.
+						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
+							.media
+								%img.margin-right{:src=>"../images/menu-icon-wallet.svg"}
+								.media-body
+									%p.mt-0.bold-font.no-margin-bottom.secondary-text-color
+										EverCheck Wallet
+									%h4.no-margin-bottom.extra-light-text-color
+										Empowering healthcare professionals with mobile technology.
 				%li.nav-item.dropdown
 					%a#navbarDropdown.nav-link.text-color{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
 						Use cases
@@ -45,12 +60,19 @@
 					.dropdown-menu{"aria-labelledby" => "navbarDropdown"}
 						%a.dropdown-item.padding-top.padding-bottom{:href => "#"} 
 							.media
-								%img.margin-right{:src=>"../images/menu-icon-hr.svg"}
 								.media-body
-									%p.mt-0.bold-font.no-margin-bottom.blue-text-color
-										Human resources
-									%h4.no-margin-bottom.light-text-color
-										An automated approach to ongoing license management.
+									%p.mt-0.bold-font.no-margin-bottom
+										Track CE and verify licensure
+									%h4.extra-light-text-color.margin-bottom
+										Track continuing education and capture license renewals automatically.
+									%h4.extra-light-text-color.no-margin-bottom
+										Powered by 
+										%img{:src=>"../images/product-icon-education.svg"}
+										Education +
+										%img{:src=>"../images/product-icon-wallet.svg"} 
+										Wallet + 
+										%img{:src=>"../images/product-icon-hr.svg"} 
+										HR
 						
 				%li.nav-item
 					%a.nav-link.text-color{:href => "#"}

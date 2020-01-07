@@ -1,0 +1,22 @@
+#primary-footer{
+	background:shade($primary-color,40%);
+	color:white;
+	padding:$baseline*2 0;
+	.divider{
+		border-color:rgba(255,255,255,.1);
+	}
+	.footer-text{
+		color:rgba(255,255,255,.5);
+	}
+	.links-section{
+		margin-bottom:$baseline;
+		a.nav-link{
+			padding:0;
+			color:white;
+			font-size: 13px;
+			&:hover{
+				color:$link-color;
+			}
+		}
+	}
+}
