@@ -3,10 +3,14 @@
 	.container
 		%a.navbar-brand.brand{:href => "#"} 
 			%img{:src=>"../images/logo.svg", :width=>"153px"}
-		%button.tcon.tcon-menu--xcross.menu-button.toggle-menu-button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
-			%span.tcon-menu__lines{"aria-hidden" => "true"}
-			%span.tcon-visuallyhidden
-				toggle menu
+		%form.form-inline
+			.d-none.d-sm-block.d-lg-none
+				%button.btn.btn-primary.btn-sm.half-margin-right{:type => "submit"} 
+					Request a demo
+			%button.tcon.tcon-menu--xcross.menu-button.toggle-menu-button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+				%span.tcon-menu__lines{"aria-hidden" => "true"}
+				%span.tcon-visuallyhidden
+					toggle menu
 		#navbarSupportedContent.collapse.navbar-collapse
 			%ul.navbar-nav.mr-auto
 				%li.nav-item.dropdown
@@ -55,10 +59,10 @@
 					%a.nav-link.text-color{:href => "#"} 
 						Pricing
 			.action-buttons
-				%form.form-inline.my-2.my-lg-0
-					%button.btn.btn-primary.btn-sm.my-2.my-sm-0.half-margin-right{:type => "submit"} 
+				%form.form-inline
+					%button.btn.btn-primary.btn-sm.half-margin-right{:type => "submit"} 
 						Request a demo
-					%button.btn.btn-secondary.btn-sm.my-2.my-sm-0{:type => "submit"} 
+					%button.btn.btn-secondary.btn-sm{:type => "submit"} 
 						Sign in
 
 

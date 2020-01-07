@@ -1,4 +1,15 @@
+.nav-open{
+    #main{
+    	@include breakpoint(md) {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+			z-index: 49;
+    	}
 
+    }
+}
 
 
 @mixin header-base {
@@ -9,6 +20,20 @@
 	z-index:99;
 	top:0;
 	padding:16px 1rem;
+	.container{
+		position:relative;
+	}
+	.action-buttons{
+		@include breakpoint(md) {
+			// position: absolute;
+			// right: 54px;
+			// top: -8px;		
+			.btn{
+				width:100%;
+				margin:10px 0 0 0!important;
+			}	
+		}
+	}
 	.brand{
 		position:relative;
 		top:-4px;
@@ -18,18 +43,29 @@
 			.nav-item{
 				padding-left:10px;
 				padding-right:10px;
+				font-size: 14px;
+				@include breakpoint(md) {
+					padding-left:0;
+					padding-right:0;
+					font-size: 16px;
+					font-weight: 800;
+				}
+				.nav-link{
+					color:$text-color;
+					@include breakpoint(md) {
+						padding:20px 0 8px 0;
+					}
+				}
 			}
 		}
 	}
-	.navbar-nav{
-		.nav-item{
-			font-size: 14px;
-			.nav-link{
-				color:$text-color;
+  
+	.dropdown{
+		&.show{
+			.dropdown-caret{
+				transform: rotate(180deg);
 			}
 		}
-	}    
-	.dropdown{
 		.dropdown-menu{
 			top:90%;
 			box-shadow: $box-shadow-elv-three;
@@ -40,8 +76,18 @@
 			@include breakpoint(md) {
 				top:100%;
 				box-shadow:none;
+				border:none;
 				&.show{
 					display: block;
+					.dropdown-item{
+						padding-left:5px;
+						padding-right:5px;
+						white-space:normal;
+						border-radius:$base-border-radius;
+					}
+					.dropdown-divider{
+						display: none;
+					}
 				}
 			}			
 		}
