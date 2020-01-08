@@ -27,10 +27,9 @@ a{
 	&.btn-link{
 		border:none;
 		border-bottom:1px solid $link-color;
-		padding-left:0;
-		padding-right:0;
 		border-radius:0px;
 		min-width: auto;
+		padding: 4px 0px;
 		&:hover{
 			text-decoration: none;
 			color:shade($link-color,30%)!important;
@@ -131,15 +130,15 @@ a{
 	}
 	//primary wire
 	&.btn-outline-primary{
-		color:$primary-color;
-		border-color:$primary-color;
+		color:white;
+		border-color:$secondary-color;
 		&:hover{
-			background:$primary-color;
+			background:$secondary-color;
 			color:white;
 		}
 		&:active{
-			border-color:$primary-color;
-			background:shade($primary-color,40%)!important;
+			border-color:$secondary-color;
+			background:shade($secondary-color,40%)!important;
 		}
 	}
 	//white btn
