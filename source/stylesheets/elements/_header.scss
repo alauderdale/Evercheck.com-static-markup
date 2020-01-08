@@ -74,6 +74,9 @@
 			top:90%;
 			box-shadow: $box-shadow-elv-three;
 			animation: 0.25s show-menu ease-out forwards;
+			h3,h4,h5,h6,p{
+				margin:0;
+			}
 			&.show{
 				display: none;
 			}
