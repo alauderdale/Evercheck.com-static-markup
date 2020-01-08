@@ -29,7 +29,9 @@
 }
 
 .product-card{
-	
+	transition: all .2s ease-out;
+	will-change: transform;
+	box-shadow: $box-shadow-elv-one;
 	@include breakpoint(lg) {
 		min-height: 440px;
 	}
@@ -45,5 +47,9 @@
 		background:transparent;
 		border:none;
 		padding-bottom:$baseline*2;
+	}
+	&:hover{
+		transform: translateY(-10px);
+		box-shadow: $box-shadow-elv-three;
 	}
 }

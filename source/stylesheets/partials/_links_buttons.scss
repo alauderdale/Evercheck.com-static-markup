@@ -141,6 +141,20 @@ a{
 			background:shade($secondary-color,40%)!important;
 		}
 	}
+
+	&.btn-outline-link{
+		color:$link-color;
+		border-color:$link-color;
+		&:hover{
+			background:$link-color;
+			color:white;
+		}
+		&:active{
+			border-color:$link-color;
+			background:shade($link-color,40%)!important;
+		}
+	}
+
 	//white btn
 	&.btn-light{
 		color:$link-color;

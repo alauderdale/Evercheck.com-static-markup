@@ -34,38 +34,41 @@
 					See more about the solutions
 		.row.mt-5
 			.col-12.col-md-4
-				.card.text-center.elevation-1.blue-cap.cap.margin-bottom.product-card
-					.card-body
-						%img.img-fluid.margin-bottom{:src=>"../images/menu-icon-hr.svg", :width=>"109px"}
-						%p.body-large.bold-font.blue-text-color
-							Human Resources
-						%p.light-text-color
-							Keep a finger on the pulse of your license compliance with an automated solution to primary source verification and ongoing monitoring. 
-					.card-footer
-						%a.medium-font{:href=>"#"}
-							Learn more
+				%a{:href=>"/hr"}
+					.card.text-center.blue-cap.cap.margin-bottom.product-card
+						.card-body
+							%img.img-fluid.margin-bottom{:src=>"../images/menu-icon-hr.svg", :width=>"109px"}
+							%p.body-large.bold-font.blue-text-color
+								Human Resources
+							%p.light-text-color
+								Keep a finger on the pulse of your license compliance with an automated solution to primary source verification and ongoing monitoring. 
+						.card-footer
+							%p.medium-font.link-color.no-margin-bottom
+								Learn more
 			.col-12.col-md-4
-				.card.text-center.elevation-1.yelow-cap.cap.margin-bottom.product-card
-					.card-body
-						%img.img-fluid.margin-bottom{:src=>"../images/menu-icon-education.svg", :width=>"109px"}
-						%p.body-large.bold-font.yellow-text-color
-							Education
-						%p.light-text-color
-							Facilitate growth and learning across the organization with a better way to track, manage, and create continuing education. 
-					.card-footer
-						%a.medium-font{:href=>"#"}
-							Learn more
+				%a{:href=>"#"}
+					.card.text-center.yelow-cap.cap.margin-bottom.product-card
+						.card-body
+							%img.img-fluid.margin-bottom{:src=>"../images/menu-icon-education.svg", :width=>"109px"}
+							%p.body-large.bold-font.yellow-text-color
+								Education
+							%p.light-text-color
+								Facilitate growth and learning across the organization with a better way to track, manage, and create continuing education. 
+						.card-footer
+							%p.medium-font.link-color.no-margin-bottom
+								Learn more
 			.col-12.col-md-4
-				.card.text-center.elevation-1.secondary-cap.cap.margin-bottom.product-card
-					.card-body
-						%img.img-fluid.margin-bottom{:src=>"../images/menu-icon-wallet.svg", :width=>"109px"}
-						%p.body-large.bold-font.secondary-text-color
-							Evercheck Wallet
-						%p.light-text-color
-							The app that gives healthcare professionals the power to upload, store, and send verified licenses to you digitally.
-					.card-footer
-						%a.medium-font{:href=>"#"}
-							Learn more
+				%a{:href=>"#"}
+					.card.text-center.secondary-cap.cap.margin-bottom.product-card
+						.card-body
+							%img.img-fluid.margin-bottom{:src=>"../images/menu-icon-wallet.svg", :width=>"109px"}
+							%p.body-large.bold-font.secondary-text-color
+								Evercheck Wallet
+							%p.light-text-color
+								The app that gives healthcare professionals the power to upload, store, and send verified licenses to you digitally.
+						.card-footer
+							%p.medium-font.link-color.no-margin-bottom
+								Learn more
 
 %section
 	.container
@@ -94,7 +97,9 @@
 				%a.btn.btn-primary.double-margin-top{:href=>"#"}
 					See a use case for these solutions
 
-%section.light-bg-color
+
+
+%section.swiper-section.off-white-bg-color
 	.container
 		.row.justify-content-center.double-margin-bottom
 			.col-12.col-md-9.text-center
@@ -104,10 +109,7 @@
 					We design our software alongside our partners and build solutions that solve real-world problems. 
 				%a.btn.btn-primary.margin-top{:href=>"#"}
 					Learn about the platform
-
-
-%section.swiper-section.light-bg-color.no-padding-top
-	.swiper-wrapper
+	.swiper-wrapper.double-padding-top
 		.container
 			.row.justify-content-center
 				.col-9

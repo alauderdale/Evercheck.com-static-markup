@@ -71,4 +71,15 @@
 	}
 }
 
+.market-image-right-1{
+	max-width: 150%;
+	position: relative;
+	top:50px;
+	@include breakpoint(md) {
+		max-width: 100%;
+		right: 0;
+		top:0;
+	}
+}
+
 
