@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>feature title</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solution---HR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feature-title">
+            <g id="Group-6">
+                <g id="icon-/-rounded">
+                    <g id="Group-6">
+                        <g id="icon-bg-/-neutral" fill="#F2F5F8">
+                            <circle id="Oval-3" cx="25" cy="25" r="25"></circle>
+                        </g>
+                        <g id="icon-/-feature-/-license-verification" transform="translate(6.626506, 6.024096)">
+                            <g id="Group" transform="translate(3.614458, 9.638554)">
+                                <g id="Group-37">
+                                    <g id="Group-38">
+                                        <rect id="Rectangle-3" fill="#51CCCC" x="0" y="0" width="27.3713034" height="17.6706827" rx="2.52"></rect>
+                                        <path d="M4.66676889,1.6064257 L26.9980723,1.6064257 C28.3898299,1.6064257 29.5180723,2.73466813 29.5180723,4.1264257 L29.5180723,16.7571084 C29.5180723,18.148866 28.3898299,19.2771084 26.9980723,19.2771084 L4.66676889,19.2771084 C3.27501132,19.2771084 2.14676889,18.148866 2.14676889,16.7571084 L2.14676889,4.1264257 C2.14676889,2.73466813 3.27501132,1.6064257 4.66676889,1.6064257 Z" id="Rectangle-3" fill="#5EE5E5"></path>
+                                        <g id="Group-36" transform="translate(4.830230, 5.354752)" fill="#FFFFFF">
+                                            <rect id="Rectangle-7" x="0" y="0" width="9.66046002" height="10.1740295" rx="4.83023001"></rect>
+                                        </g>
+                                        <polygon id="Rectangle-9" fill="#3D9C9C" points="17.1741512 6.42570281 26.8346112 6.42570281 26.8346112 8.03212851 17.1741512 8.03212851"></polygon>
+                                        <polygon id="Rectangle-9" fill="#3D9C9C" points="17.1741512 9.10307898 26.8346112 9.10307898 26.8346112 10.7095047 17.1741512 10.7095047"></polygon>
+                                        <polygon id="Rectangle-9" fill="#3D9C9C" points="17.1741512 11.7804552 22.5410734 11.7804552 22.5410734 13.3868809 17.1741512 13.3868809"></polygon>
+                                    </g>
+                                </g>
+                                <polygon id="Path-4" fill="#51CCCC" fill-rule="nonzero" points="11.6109568 7.22891566 13.253012 8.69080689 8.88759368 13.8554217 6.02409639 11.2931533 7.45265576 9.6116032 8.67356081 10.7040737"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

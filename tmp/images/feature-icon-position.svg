@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>feature title</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solution---HR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feature-title">
+            <g id="Group-6">
+                <g id="icon-/-rounded">
+                    <g id="Group-6">
+                        <g id="icon-bg-/-neutral" fill="#F2F5F8">
+                            <circle id="Oval-3" cx="25" cy="25" r="25"></circle>
+                        </g>
+                        <g id="Icon-/-feature-/-job-reqs" transform="translate(6.626506, 6.024096)">
+                            <g id="Group-30" stroke-width="1" transform="translate(6.626506, 5.421687)">
+                                <rect id="Rectangle-12" fill="#E2BA40" x="0" y="0" width="20.8401172" height="23.9608434"></rect>
+                                <rect id="Rectangle-12" fill="#FFD452" x="3.25626832" y="1.94277108" width="20.8401172" height="23.9608434"></rect>
+                                <g id="Group-10" transform="translate(5.210029, 5.180723)" stroke="#BF9410" stroke-linejoin="round" stroke-opacity="0.467249774" stroke-width="2.7216">
+                                    <g id="Group-8">
+                                        <polyline id="Path-3" points="0 2.46764785 1.81463546 4.52145723 5.21002931 0"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                            <rect id="Rectangle-9" fill="#FFFFFF" x="18.6746988" y="13.253012" width="10.8433735" height="1.80722892"></rect>
+                            <rect id="Rectangle-9" fill="#FFFFFF" x="12.0481928" y="17.2690763" width="17.4698795" height="1.80722892"></rect>
+                            <rect id="Rectangle-9" fill="#FFFFFF" x="12.0481928" y="21.2851406" width="12.0481928" height="1.80722892"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

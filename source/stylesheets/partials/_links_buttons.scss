@@ -11,12 +11,18 @@ a{
 }
 
 
-.btn{
+
+
+.btn, .elementor-button{
 	border-radius:$base-border-radius;
 	font-weight:700;
 	font-size:$base-font-size;
 	min-width:88px;
 	padding: 8px 16px;
+
+	@include breakpoint(sm) {
+			width: 100%;
+		}
 	
 	i{
 		font-size:$base-font-size;
@@ -40,8 +46,8 @@ a{
 			white-space:initial;
 		}
 	}
-	//primary buttons
-	&.btn-primary{
+	//primary buttons, second class is for elementor
+	&.btn-primary, .default-btn &{
 		background:$link-color;
 		border-color:$link-color;
 		&:hover{
@@ -129,9 +135,10 @@ a{
 		}
 	}
 	//primary wire
-	&.btn-outline-primary{
+	&.btn-outline-primary, .primary-outline-btn &{
 		color:white;
 		border-color:$secondary-color;
+		background:transparent;
 		&:hover{
 			background:$secondary-color;
 			color:white;
@@ -142,12 +149,13 @@ a{
 		}
 	}
 
-	&.btn-outline-link{
-		color:$link-color;
+	&.btn-outline-link, .link-outline-btn &{
+		color:$link-color!important;
 		border-color:$link-color;
+		background:transparent;
 		&:hover{
 			background:$link-color;
-			color:white;
+			color:white!important;
 		}
 		&:active{
 			border-color:$link-color;
@@ -208,8 +216,7 @@ a{
 .btn-pair{
 	@include breakpoint(xs) {
 		.btn{
-			width:100%;
-			margin-top:10px;
+			width:100%!important;
 		}
 	}
 }

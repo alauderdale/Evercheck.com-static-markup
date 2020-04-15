@@ -5,11 +5,11 @@
 section{
   padding:$baseline*3 0;
   @include breakpoint(md) {
-  	padding:$baseline*3 0;
+    padding:$baseline*3 0;
   }
   &.inverse-section{
-  	background:$primary-color;
-  	@extend %white_text;
+    background:$primary-color;
+    @extend %white_text;
     .line-above{
       &:before{
         background:rgba(255,255,255,.5);

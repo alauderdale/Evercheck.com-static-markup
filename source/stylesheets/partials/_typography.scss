@@ -193,17 +193,18 @@ p, h3{
 }
 
 h1, h2, h3, h4{
-  &.market{
+  &.market, .market &{
     font-weight: 800;
     font-family:$regular-font-name;
     color:$primary-color;
   }
 }
 
+
 h1{
   font-size:1.875rem; //30px
 
-  &.market{
+  &.market, .market &{
     font-size:3.75rem; //60px
 
   }
@@ -212,7 +213,7 @@ h1{
 h2{
   font-size:1.5rem; //24px
 
-  &.market{
+  &.market, .market &{
     font-size:2.625rem; //42px
 
   }
@@ -221,7 +222,7 @@ h2{
 h3{
   font-size:1.063rem; //17px
 
-  &.market{
+  &.market, .market &{
     font-size:2.188rem; //35px
 
   }
@@ -230,7 +231,7 @@ h3{
 h4{
   font-size:0.875rem; //14px
 
-  &.market{
+  &.market, .market &{
     font-size:1.563rem; //25px
 
   }
@@ -248,7 +249,7 @@ h6{
 
 p{
   font-family:$body-font-name;
-  &.body-large{
+  &.body-large, .body-large &{
     font-size:1.313rem; //21px
 
   }
@@ -302,9 +303,10 @@ p{
     html{
       font-size: 14px;
     }
-    h1.market{
+    h1.market, .market h1{
       font-size: 2.75em;
     }
+
 
     // h1.market, h2.market, h3.market, h4.market, h5.market, h6.market, h1, h2, h3, h4, h5, h6, p, p.body-large {
     //   font-size: 1em;
