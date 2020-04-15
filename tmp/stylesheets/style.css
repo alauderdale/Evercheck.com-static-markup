@@ -215,29 +215,29 @@ h1, h2, h3, h4, h5, h6 {
 p, h3 {
   line-height: 1.6; }
 
-h1.market, h2.market, h3.market, h4.market {
+h1.market, .market h1, h2.market, .market h2, h3.market, .market h3, h4.market, .market h4 {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
   color: #0F3166; }
 
 h1 {
   font-size: 1.875rem; }
-  h1.market {
+  h1.market, .market h1 {
     font-size: 3.75rem; }
 
 h2 {
   font-size: 1.5rem; }
-  h2.market {
+  h2.market, .market h2 {
     font-size: 2.625rem; }
 
 h3 {
   font-size: 1.063rem; }
-  h3.market {
+  h3.market, .market h3 {
     font-size: 2.188rem; }
 
 h4 {
   font-size: 0.875rem; }
-  h4.market {
+  h4.market, .market h4 {
     font-size: 1.563rem; }
 
 h5 {
@@ -248,7 +248,7 @@ h6 {
 
 p {
   font-family: "Open Sans", sans-serif; }
-  p.body-large {
+  p.body-large, .body-large p {
     font-size: 1.313rem; }
 
 .line-above:before {
@@ -278,7 +278,7 @@ p {
   html {
     font-size: 14px; }
 
-  h1.market {
+  h1.market, .market h1 {
     font-size: 2.75em; } }
 @media (max-width: 768px) {
   .text-align-center-sm {
@@ -292,146 +292,150 @@ a {
     color: #4d9df0;
     text-decoration: none; }
 
-.btn {
+.btn, .elementor-button {
   border-radius: 3px;
   font-weight: 700;
   font-size: 16px;
   min-width: 88px;
   padding: 8px 16px; }
-  .btn i {
+  @media (max-width: 768px) {
+    .btn, .elementor-button {
+      width: 100%; } }
+  .btn i, .elementor-button i {
     font-size: 16px;
     position: relative;
     top: 3px;
     margin-right: 10px; }
-  .btn.btn-link {
+  .btn.btn-link, .elementor-button.btn-link {
     border: none;
     border-bottom: 1px solid #0073E9;
     border-radius: 0px;
     min-width: auto;
     padding: 4px 0px; }
-    .btn.btn-link:hover {
+    .btn.btn-link:hover, .elementor-button.btn-link:hover {
       text-decoration: none;
       color: #0051a3 !important;
       border-bottom-color: #0051a3; }
     @media (max-width: 768px) {
-      .btn.btn-link {
+      .btn.btn-link, .elementor-button.btn-link {
         border: none;
         white-space: initial; } }
-  .btn.btn-primary {
+  .btn.btn-primary, .default-btn .btn, .elementor-button.btn-primary, .default-btn .elementor-button {
     background: #0073E9;
     border-color: #0073E9; }
-    .btn.btn-primary:hover {
+    .btn.btn-primary:hover, .default-btn .btn:hover, .elementor-button.btn-primary:hover, .default-btn .elementor-button:hover {
       background: #005cba;
       border-color: #005cba; }
-  .btn.btn-secondary {
+  .btn.btn-secondary, .elementor-button.btn-secondary {
     background: white;
     border-color: #BEC6C6;
     color: #282E2E; }
-    .btn.btn-secondary:active {
+    .btn.btn-secondary:active, .elementor-button.btn-secondary:active {
       border-color: #131414;
       background: #F3F6F6 !important;
       color: #282E2E !important; }
-    .btn.btn-secondary:hover {
+    .btn.btn-secondary:hover, .elementor-button.btn-secondary:hover {
       background: #F3F6F6; }
-  .btn.btn-white {
+  .btn.btn-white, .elementor-button.btn-white {
     background: white;
     color: #326EC4;
     font-weight: 700; }
-  .btn.btn-shadow {
+  .btn.btn-shadow, .elementor-button.btn-shadow {
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.09); }
-  .btn.btn-danger {
+  .btn.btn-danger, .elementor-button.btn-danger {
     background: #DE350B;
     border-color: #DE350B; }
-    .btn.btn-danger:hover {
+    .btn.btn-danger:hover, .elementor-button.btn-danger:hover {
       background: #b22a09;
       border-color: #b22a09; }
-  .btn.btn-success {
+  .btn.btn-success, .elementor-button.btn-success {
     background: #00A950;
     border-color: #00A950; }
-    .btn.btn-success:hover {
+    .btn.btn-success:hover, .elementor-button.btn-success:hover {
       background: #008740;
       border-color: #008740; }
-  .btn.btn-warning {
+  .btn.btn-warning, .elementor-button.btn-warning {
     background: #FFAA00;
     border-color: #FFAA00;
     color: white; }
-    .btn.btn-warning:hover {
+    .btn.btn-warning:hover, .elementor-button.btn-warning:hover {
       background: #cc8800;
       border-color: #cc8800; }
-  .btn.btn-flat {
+  .btn.btn-flat, .elementor-button.btn-flat {
     background: transparent;
     border-color: white;
     color: #282E2E; }
-    .btn.btn-flat:hover {
+    .btn.btn-flat:hover, .elementor-button.btn-flat:hover {
       background: #cccccc;
       border-color: #cccccc; }
-  .btn.btn-link {
+  .btn.btn-link, .elementor-button.btn-link {
     color: #0073E9; }
-    .btn.btn-link:hover {
+    .btn.btn-link:hover, .elementor-button.btn-link:hover {
       color: #0068d2; }
-  .btn.btn-icon {
+  .btn.btn-icon, .elementor-button.btn-icon {
     line-height: 1; }
-    .btn.btn-icon i {
+    .btn.btn-icon i, .elementor-button.btn-icon i {
       color: #BEC6C6; }
-    .btn.btn-icon:hover i, .btn.btn-icon:focus i {
+    .btn.btn-icon:hover i, .btn.btn-icon:focus i, .elementor-button.btn-icon:hover i, .elementor-button.btn-icon:focus i {
       color: #131414; }
-  .btn.btn-outline-light:hover {
+  .btn.btn-outline-light:hover, .elementor-button.btn-outline-light:hover {
     color: #0073E9; }
-  .btn.btn-outline-primary {
+  .btn.btn-outline-primary, .primary-outline-btn .btn, .elementor-button.btn-outline-primary, .primary-outline-btn .elementor-button {
     color: white;
-    border-color: #00CA93; }
-    .btn.btn-outline-primary:hover {
+    border-color: #00CA93;
+    background: transparent; }
+    .btn.btn-outline-primary:hover, .primary-outline-btn .btn:hover, .elementor-button.btn-outline-primary:hover, .primary-outline-btn .elementor-button:hover {
       background: #00CA93;
       color: white; }
-    .btn.btn-outline-primary:active {
+    .btn.btn-outline-primary:active, .primary-outline-btn .btn:active, .elementor-button.btn-outline-primary:active, .primary-outline-btn .elementor-button:active {
       border-color: #00CA93;
       background: #007958 !important; }
-  .btn.btn-outline-link {
-    color: #0073E9;
-    border-color: #0073E9; }
-    .btn.btn-outline-link:hover {
+  .btn.btn-outline-link, .link-outline-btn .btn, .elementor-button.btn-outline-link, .link-outline-btn .elementor-button {
+    color: #0073E9 !important;
+    border-color: #0073E9;
+    background: transparent; }
+    .btn.btn-outline-link:hover, .link-outline-btn .btn:hover, .elementor-button.btn-outline-link:hover, .link-outline-btn .elementor-button:hover {
       background: #0073E9;
-      color: white; }
-    .btn.btn-outline-link:active {
+      color: white !important; }
+    .btn.btn-outline-link:active, .link-outline-btn .btn:active, .elementor-button.btn-outline-link:active, .link-outline-btn .elementor-button:active {
       border-color: #0073E9;
       background: #00458c !important; }
-  .btn.btn-light {
+  .btn.btn-light, .elementor-button.btn-light {
     color: #0073E9;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.04);
     background: #fff;
     border: none; }
-    .btn.btn-light:hover {
+    .btn.btn-light:hover, .elementor-button.btn-light:hover {
       background: #F9FAFC;
       border: none; }
-  .btn.btn-dark {
+  .btn.btn-dark, .elementor-button.btn-dark {
     background: #282E2E; }
-    .btn.btn-dark:hover {
+    .btn.btn-dark:hover, .elementor-button.btn-dark:hover {
       background: black !important; }
-  .btn.btn-lg {
+  .btn.btn-lg, .elementor-button.btn-lg {
     padding: .8rem 1rem; }
-  .btn.btn-sm {
+  .btn.btn-sm, .elementor-button.btn-sm {
     font-size: 14px; }
-  .btn.btn-scroll {
+  .btn.btn-scroll, .elementor-button.btn-scroll {
     color: rgba(255, 255, 255, 0.5); }
-    .btn.btn-scroll:hover {
+    .btn.btn-scroll:hover, .elementor-button.btn-scroll:hover {
       color: white; }
-    .btn.btn-scroll i {
+    .btn.btn-scroll i, .elementor-button.btn-scroll i {
       font-size: 52px; }
-    .btn.btn-scroll:active, .btn.btn-scroll:focus {
+    .btn.btn-scroll:active, .btn.btn-scroll:focus, .elementor-button.btn-scroll:active, .elementor-button.btn-scroll:focus {
       outline: none;
       box-shadow: none; }
-  .btn.btn-outline-light {
+  .btn.btn-outline-light, .elementor-button.btn-outline-light {
     color: white !important; }
-    .btn.btn-outline-light.active {
+    .btn.btn-outline-light.active, .elementor-button.btn-outline-light.active {
       background: transparent !important; }
-    .btn.btn-outline-light:hover {
+    .btn.btn-outline-light:hover, .elementor-button.btn-outline-light:hover {
       color: #0F3166 !important;
       background: white !important; }
 
 @media (max-width: 576px) {
   .btn-pair .btn {
-    width: 100%;
-    margin-top: 10px; } }
+    width: 100% !important; } }
 
 @media (max-width: 768px) {
   .btn-block-sm {
@@ -749,23 +753,22 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .mw-xs-100 {
     max-width: 100% !important; } }
 .market-image-left-1 {
-  max-width: 150%;
   position: relative;
-  right: 300px;
+  right: 100px;
   top: 50px; }
   @media (max-width: 991px) {
     .market-image-left-1 {
-      max-width: 100%;
+      left: 0;
       right: 0;
       top: 0; } }
 
 .market-image-right-1 {
-  max-width: 150%;
   position: relative;
-  top: 50px; }
+  top: 50px;
+  left: 100px; }
   @media (max-width: 991px) {
     .market-image-right-1 {
-      max-width: 100%;
+      left: 0;
       right: 0;
       top: 0; } }
 
@@ -804,6 +807,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     border: none;
     padding-bottom: 32px; }
   .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.1); }
+
+.move-up-card {
+  transition: all .2s ease-out;
+  will-change: transform;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12); }
+  .move-up-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.1); }
 
@@ -987,11 +998,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-bottom: 8px; }
   #primary-footer .links-section {
     margin-bottom: 16px; }
-    #primary-footer .links-section a.nav-link {
+    #primary-footer .links-section a.nav-link, #primary-footer .links-section a {
       padding: 0;
       color: white;
       font-size: 13px; }
-      #primary-footer .links-section a.nav-link:hover {
+      #primary-footer .links-section a.nav-link:hover, #primary-footer .links-section a:hover {
         color: #0073E9; }
 
 .home-hero {
@@ -1010,3 +1021,111 @@ svg {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+.customize-support #primary-nav {
+  top: 32px; }
+
+.customize-support .results-search-form {
+  top: 50px; }
+  @media (max-width: 768px) {
+    .customize-support .results-search-form {
+      top: 126px; } }
+
+@media screen and (max-width: 782px) {
+  .customize-support #primary-nav, .customize-support .mobile-menu {
+    top: 46px; } }
+@media (max-width: 768px) {
+  #wpadminbar {
+    position: fixed; } }
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
